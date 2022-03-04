@@ -12,21 +12,47 @@ Repository for React learning
 - [Develop Environment](#develop-environment)
   - [Ubuntu18.04 LTS](#ubuntu1804-lts)
   - [curl (60) エラー発生時の対処](#curl-60-エラー発生時の対処)
-  - [VS Code Debugger設定](#vs-code-debugger設定)
+  - [VS Code: Debugger設定](#vs-code-debugger設定)
+  - [Chrome: React Developer Tools](#chrome-react-developer-tools)
 - [Start React Application](#start-react-application)
 
 <!-- /code_chunk_output -->
 
 ---
 
+ReactはJavascriptのライブラリの一種で、UI作成に強みを持っているのが特徴です。
+Facebookが開発し、Instagramなどでも利用されています。
+
 # References
 
+React
 [Getting Started – React](https://reactjs.org/docs/getting-started.html)
+[React JavaScript Tutorial in Visual Studio Code](https://code.visualstudio.com/docs/nodejs/reactjs-tutorial)
+[React Developer Tools - Chrome Web Store](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en)
+
+JavaScript
+[JavaScript | MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+[The Modern JavaScript Tutorial](https://javascript.info/)
 
 
 # Develop Environment
 
 Visual Studio Codeで開発環境を構築する
+
+```
+$ lsb_release  -a
+No LSB modules are available.
+Distributor ID: Ubuntu
+Description:    Ubuntu 18.04.6 LTS
+Release:        18.04
+Codename:       bionic
+$ n --version
+v8.0.2
+$ node --version
+v16.14.0
+$ npm --version
+8.3.1
+```
 
 - [React JavaScript Tutorial in Visual Studio Code](https://code.visualstudio.com/docs/nodejs/reactjs-tutorial)
 - [Download | Node.js](https://nodejs.org/en/download/)
@@ -83,7 +109,7 @@ how to fix it, please visit the web page mentioned above.
 $ sudo n stable --insecure
 ```
 
-## VS Code Debugger設定
+## VS Code: Debugger設定
 
 `index.js`を開いて`Ctrl+Shift+D` or `F5`キーで`launch.json`ファイルを作成します。
 デフォルトだと`url`のポートが`8080`なので`3000`に変えておきます。
@@ -105,6 +131,9 @@ $ sudo n stable --insecure
 }
 ```
 
+## Chrome: React Developer Tools
+
+[React Developer Tools - Chrome Web Store](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en)
 
 # Start React Application
 
